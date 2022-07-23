@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="StylingContact.css">
+        <title>Contact Page</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <img src="BookStoreLogo.png" alt="Logo">
+                <nav>
+                    <ul>
+                        <a href="Index.html">Home Page</a>
+                        <a href="CategoryPage.html">Adventure</a>
+                        <a href="CategoryPage.html">Horror</a>
+                        <a href="CategoryPage.html">Other Categories</a>
+                    </ul>
+                </nav>
+           </header> 
+
+            <form action='/action_page.php' method="post" target="_blank">
+                <h1>Contact Us</h1>
+                <div class="content_container">
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="purpose">Contact Purpose</label>
+                        </div>
+                        <div class="form-field">
+                            <select id="purpose" name="puropse-list">
+                                <option value="" selected>Please Select</option>
+                                <option value="BuyBook">I want to buy books</option>
+                                <option value="SellBook">I want to sell books</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-field">
+                            <input required id="name" type="text" name="name" maxlength="50">
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-field">
+                            <input required id="email" type="text" name="name" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"> 
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="phone">Your Phone</label>
+                        </div>
+                        <div class="form-field">
+                            <input required id="phone" type="number" name="phone" maxlength="10">
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label>Preferred Contact Method</label>
+                        </div>
+                        <div class="form-field">
+                                    <input type="checkbox" id="contact_phone" name="contact_method"/>
+                                    <label for="contact_phone"> By Phone</label>
+                                    <input type="checkbox" id="contact_email" name="contact_method"/>
+                                    <label for="contact_email">By Email</label>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label>Do you want to receive our weekly newsletter</label>
+                        </div>
+                        <div class="form-field">
+                                    <input type="radio" id="yes" name="receive_newsletter" checked/>
+                                    <label for="yes">Yes</label>
+                                    <input type="radio" id="no" name="receive_newsletter"/>
+                                    <label for="no">No</label>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <div class="form-label">
+                            <label for="message">Your Message</label>
+                        </div>
+                        <div class="form-field">
+                            <textarea cols="66" rows="9" required id="message" name="message_input" style="width: 336px; height: 166px;"></textarea>
+                        </div>
+                    </div>
+    
+                    <div class="form-row">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </div>
+            </form>
+
+            <footer>
+                <nav>
+                    <ul>
+                        <a href="#">About Us</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Copyright</a>
+                        <a href="ContactPage.html">Contact Us</a>
+                    </ul>
+                </nav>
+           </footer>
+        </main>
+    </body>
+</html>
