@@ -28,7 +28,7 @@ ul.Breadcrumbs li {
 ul.Breadcrumbs li+li:before {
     padding: 8px;
     color: black;
-    content: "/\00a0";
+    content: ">\00a0";
 }
 
 section {
